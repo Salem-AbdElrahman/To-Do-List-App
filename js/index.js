@@ -78,6 +78,7 @@ function readyTOUpdate(index){
 function updateTask(){
     tasks[updatedIndex].name=taskNameInput.value;
     showTasks(tasks)
+    clear()
     localStorage.setItem("tasks",JSON.stringify(tasks))
     updateTaskBtn.classList.add('d-none');
     addBtn.classList.remove('d-none');
