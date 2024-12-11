@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main>
+    <ul class="background">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+     </ul>
+
+
+     <h1 class="text-center m-auto">To-Do-List</h1>
+
+    <section>
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6">
+                    <div>
+                        <input type="text" placeholder="Enter Your Task" class="form-control" id="taskNameInput">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                    <select name="" id="taskStatusInput" class="form-control">
+                        <option value="All">All</option>
+                        <option value="pended">pended</option>
+                        <option value="Completed">Completed</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                <div>
+                    <button class="btn btn-primary w-100" id="addBtn">Add</button>
+                    <button class="btn btn-warning w-100 d-none" id="updateTaskBtn">update</button>
+                </div>
+                </div>
+                <div class="col-md-10">
+                    <div>
+                        <input type="text" placeholder="search" class="form-control" id="searchTaskInput">
+                    </div>
+                </div>
+            </div>
+         </div>
+    </section>
+
+
+    <section>
+        <div class="container">
+            <div class="w-75 alltasks mt-4  m-auto vh-100 p-4 rounded-3">
+                <h2 class="text-center text-white">Task</h2>
+            <div class="row gy-4" id="row">
+              
+            </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+
+     <script src="./js/bootstrap.bundle.min.js"></script>
+     <script src="./js/index.js"></script>
+</body>
+</html>
